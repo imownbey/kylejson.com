@@ -1,0 +1,287 @@
+body{
+	padding-top: 25px;
+}
+.row{
+	width: 100%;
+}
+h1{
+	font-family: 'Armata', sans-serif;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1em;
+	margin: 0 0 .5em 0;
+	color: #333333;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	width: 100%;
+	display: inline-block;
+}
+
+
+.palette1{
+	background-color: #e1704b;
+	opacity: 0.7;
+	color: white;
+
+}
+.palette2{
+	background-color: #39a9a4;
+	opacity: 0.7;
+	color: white;
+
+}
+#realty #billboard {
+	width: 100%;
+	background-image: url(../img/seatBill.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-top: 0px;
+	margin-right: ;
+	margin-bottom: 0px;
+	margin-left: ;
+	height: 450px;
+}
+
+#portfolio #billboard {
+	width: 100%;
+	background-image: url(../img/codeBill.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-top: 0px;
+	margin-right: ;
+	margin-bottom: 0px;
+	margin-left: ;
+	height: 450px;
+}
+
+#education #billboard {
+	width: 100%;
+	background-image: url(../img/flagBill.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-top: 0px;
+	margin-right: ;
+	margin-bottom: 0px;
+	margin-left: ;
+	height: 450px;
+}
+
+#about #billboard {
+	width: 100%;
+	background-image: url(../img/backBill.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-top: 0px;
+	margin-right: ;
+	margin-bottom: 0px;
+	margin-left: ;
+	height: 450px;
+}
+
+#experience #billboard {
+	width: 100%;
+	background-image: url(../img/helpBill.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-top: 0px;
+	margin-right: ;
+	margin-bottom: 0px;
+	margin-left: ;
+	height: 450px;
+}
+
+#contactPage #billboard {
+	width: 100%;
+	background-image: url(../img/contactBill.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-top: 0px;
+	margin-right: ;
+	margin-bottom: 0px;
+	margin-left: ;
+	height: 450px;
+}
+
+h2{
+	color: white;
+}
+
+#work h2{
+	color:black;
+}
+
+
+
+#logo{
+	padding-left: 0px;
+}
+
+#greeting span {
+	font-family: "proxima-nova", "Helvetica", sans-serif;
+	font-weight: 100!important;
+	color: #999999;
+	display: block;
+	font-size: .3em;
+	letter-spacing: .05em;
+	line-height: 1em;
+	margin-bottom: .7em;
+}
+
+
+.top-bar{
+	color: black;
+	background-color: #eeeeee;
+	margin-bottom: -1px;
+	
+}
+
+#tb{
+	background-color: #eee;
+}
+
+.top-bar ul > li a:not(.button) {
+	color: #999;
+}
+
+.top-bar ul > li:not(.name):hover{
+	background: #eee;
+}
+
+.top-bar ul > li.active:not(.name),
+.top-bar ul > li.active:not(.name):hover{
+	background: #eee;
+}
+
+.top-bar ul > li:not(.name):hover a {
+	color: #999;
+}
+
+.top-bar ul > li.active:not(.name) a,
+.top-bar ul > li.active:not(.name):hover a {
+	color: #e1704b;
+}
+
+#box{
+	padding-top: 10px;
+	margin-top: 75px;
+	
+}
+
+
+#galleryBox{
+	background-color: #eeeeee;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	
+}
+
+#littlePic{
+	border: 4px #eeeeee solid;
+	margin-bottom: 5px;
+}
+
+
+#box p{
+	font-size: 20px;
+}
+
+nav li{
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+
+nav li:hover{
+	background-color: #eeeeee;
+}
+
+.navi{
+	color: #333333;
+}
+
+nav li a:active{
+	color: #e1704b;
+}
+
+
+#imSocial{
+	background-color: #e1704b;
+	height:200px;
+}
+
+#footer{
+	background-color: #d56540;
+	color: white;
+	height: 100px;
+	padding-top: 40px;
+}
+
+#footer p{
+
+	color: white;
+}
+
+
+#aboutMe h2 , #rutgers h2 , #port h2, #contact h2, #work h2 ,#home h2 {
+	color: #333333;
+}
+
+#aboutMe h4 , #rutgers h4 , #port h4, #contact h4, #work h4, #home h4 {
+	color: #333333;
+}
+
+h3 {
+	color:#999999;
+}
+
+
+footer  a{
+	color:white;
+}
+
+p{
+	margin-top: 10px;
+}
+
+#footer p{
+	margin-top: 0px;
+}
+
+#twitter{
+	width: 350px;
+}
+
+#home, #rutgers,#port,#contact,#work, #aboutMe{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#home a, #rutgers a,#port a,#contact a,#work a,#aboutMe a{
+	color:#39a9a4;
+}
+
+ul {
+	list-style: none;
+}
+
+#res h3{
+	color: #333;
+}
+.link-list{
+	color: white;
+}
+.lbpText{
+    width: 65%;
+}
+
+#imSocial img{
+	width: 100px;
+	height: 75px;
+	text-align: center;
+}
+
