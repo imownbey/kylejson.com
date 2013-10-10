@@ -21,7 +21,6 @@ h1 {
 	display: inline-block;
 }
 
-
 .palette1{
 	background-color: #e1704b;
 	opacity: 0.7;
@@ -254,6 +253,7 @@ p{
 
 #twitter{
 	width: 350px;
+	height: 600px;
 }
 
 #home, #rutgers,#port,#contact,#work, #aboutMe{
@@ -285,3 +285,9 @@ ul {
 	text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+	h1{
+		font-size: 2em; 
+		width: 75%;
+	}
+}
