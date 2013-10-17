@@ -1,3 +1,7 @@
+var Resume = [{
+  name: "Kyle Johnson",
+  phone: "856-745-0208"
+}];
 //active link script
 $(function() {
   $('.top-bar a').each(function(i, a) {
@@ -14,6 +18,7 @@ $(function() {
       Modernizr = window.Modernizr;
 
   $(document).ready(function() {
+    console.log(Resume);
     $.fn.foundationAlerts           ? $doc.foundationAlerts() : null;
     $.fn.foundationButtons          ? $doc.foundationButtons() : null;
     $.fn.foundationAccordion        ? $doc.foundationAccordion() : null;
