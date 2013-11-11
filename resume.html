@@ -26,12 +26,39 @@
   <link rel="stylesheet" href="mfglabs_iconset.css">
   <link rel="icon" type="image/png" href="img/favicon.png" />
   <script src="javascripts/modernizr.foundation.js"></script>
+  <script type="text/javascript" src="http://kylejson.tumblr.com/api/read/json"></script>
 </head>
-<body id = 'experience'>
-  
-
-  
-
+<style>
+  a{
+    color:black;
+  }
+  h2,h1{
+    color: #333;
+    font-family: arial;
+    text-transform: none;
+  }
+  #header h1,#header h2{
+    font-family: 'Armata', sans-serif; 
+    text-transform: uppercase; 
+  }
+  .range{
+    display:inline-block;
+    margin-right: 105px;
+  }
+  .this{
+    margin-bottom: 0;
+    margin-left:-10px;
+  }
+  .what li{
+    width:150px;
+    display: inline-block;
+    margin-right:70px;
+  }
+  .bold{
+    font-weight: bold;
+  }
+</style>
+<body id = "realty">
 
   <!-- Header -->
   <div id = 'header' class = 'row'>  
@@ -41,54 +68,86 @@
    </div>  
 
    <div id = 'greeting' class = 'nine columns'>
-   <h1 style = "font-size: 96.9px;"><span>What I have done</span>My Experience</h1>
+   <h1 style = "font-size: 96.9px;"><span>Web Developer and Game Designer</span> Kyle Johnson</h1>
    </div>
   </div>
 
-
-   <!--Navigation-->
-   <div class = 'row'>
-
-   <!-- navigation --> 
-   <div id = 'tb' class = 'contain-to-grid sticky'>
-   <nav class="top-bar">
-    
-    <div id = 'navigation' class = ''>  
-    <ul>
-      <li class = "two columns"><a href="index.html">Home</a></li>
-      <li class = 'two columns'><a href="about.html">About</a></li>
-      <li class = 'two columns'><a href="portfolio.html">Portfolio</a></li>
-      <li class = 'two columns'><a href="education.html">Education</a></li>
-      <li class = 'two columns'><a href="experience.html">Experience</a></li>
-      <li class = 'two columns'><a href="contact.html">Contact</a></li>
-      <li class="toggle-topbar"><a href="#"></a></li>
+  <div class="row"> 
+    <div class="eight columns offset-by-one">
+    <ul class="what bold this">
+      <li>Phone</li>
+      <li>Email</li>
+      <li>Portfolio</li>
+      <li>Github</li>
     </ul>
-  </div> 
-  </nav>
+    <ul class="what this">
+      <li>(856) 745-0208</li>
+      <li>kylejson@mail.com</li>
+      <li>www.kylejson.com</li>
+      <li>www.github.com/kylejson</li>
+    </ul>
   </div>
-</div>
-
-   <!-- End Navigation -->
-
+  </div>
  
-  <!-- End Header -->
-
-  <!-- Billboard -->
-  <div id = 'billboard' class = 'row'>
-    <div id = 'box' class = 'four columns offset-by-seven palette1'>
-      <h2>I learn best by doing.</h2>
-      <p>I have had some awesome opportunities to expand my skills and work with great people. Please view my past positions. If you would like to hire me for a freelance project, <a href = "mailto:kylejson@mail.com"><button class = 'button success'>Email Me!</button></a></p>
+  <div class="row">
+    <div id = 'rutgers'>
+    
+      <div class = 'row'>
+        <div class  = 'nine columns offset-by-one'>
+        <h1>Education</h1>
+        <h2>Rutgers, The State University of New Jersey </h2> 
+        <h3>Information Technology and Informatics Major</h3>
+        <h4>Computer Science and Philosophy Minors</h4>
+        <hr>
+      </div>
     </div>
-  </div>  
-  <!--End Billboard -->
 
+      <div class = 'row'>
+        <div class = 'five columns offset-by-one'>
+          <h4>Relevant Coursework:</h4>
+            <ul style = " list-style:none;">
+              <li><span class="label success">CS-111</span> Introduction to Computer Science (Java)</li>
+              <li><span class="label success">CS-112</span> Data Structures (Java)</li>
+              <li><span class="label success">CO-103</span> Introduction to Information Technology and Informatics</li>
+              <li><span class="label success">ITI-200</span> Social Informatics</li>
+              <li><span class="label success">VA-425</span> Web Authoring</li>
+              <li><span class="label success">ITI-201</span> Computing Concepts (Python)</li>
+              <li><span class="label success">ITI-202</span> Object Oriented Programming (Java)</li>
+              <li><span class="label success">ITI-471</span> Game Design Methodology</li>
+              <li><span class="label success">ITI-320</span> Web Design (HTML,CSS,PHP)</li>
+              <li><span class="label success">ITI-330</span> Advanced Web Design (Full-Stack Javascript) *Current*</li>
+              <li><span class="label success">ITI-210</span> Management of Technological Organizations *Current*</li>
+              <li><span class="label success">ITI-410</span> E-commerce (PHP/MYSQL) *Current*</li>
+            </ul>
 
+            <hr>
+          
+          <h4>Extracurricular Activities: </h4>
+            <ul style = "list-style:none;">
+              <li>Member of the Undergraduate Alliance of Computer Scientists,<a href="http://usacs.rutgers.edu/" target = "_blank"> USACS.</a></li>
+              <li>Avid participator in hackathons.</li>
+              <li>Video Games, competive and casual.</li>
+            </ul>
+        </div>
 
-  <!--Work Section-->
-   <div id = 'work'>
-     
-       <div class = 'row'>
+        <div class = 'six columns' id = 'skillz'>
+          <h4>Skills:</h4>
+          Public Speaking: <div class="alert radius progress seven"><span class="meter" style = "width:90%;"></span></div>
+          HTML/CSS (Vanilla, Bootstrap, Foundation): <div class="alert radius progress seven"><span class="meter"style = "width:80%;"></span></div>
+          Python (Flask, Pyglet): <div class="alert radius progress seven"><span class="meter"style = "width:80%;"></span></div>
+          Javascript (Vanilla, Backbone, Meteor): <div class="alert radius progress seven"><span class="meter"style = "width:75%;"></span></div>
+          Java: <div class="alert radius progress seven"><span class="meter"style = "width:60%;"></span></div>
+          PHP: <div class="alert radius progress seven"><span class="meter"style = "width:60%;"></span></div>
+          MySql/Mongodb: <div class="alert radius progress seven"><span class="meter"style = "width:50%;"></span></div>
+          Git/Github: <div class="alert radius progress seven"><span class="meter"style = "width:50%;"></span></div>
+          <ul> <li class="range">Beginner</li> <li class="range">Intermediate</li> <li class="range">Expert</li></ul>
+        </div>
+        </div>
+      </div>
+
+        <div class="row">
           <div class  = 'eight columns offset-by-one'>
+          <h1>Experience</h1>
           <h2>Software Development Intern </h2> 
           <h3>Grooveshark · June 2013 – July 2013</h3>
           <span class="label success">UI/UX</span> <span class="label success">Web Development</span> <span class="label success">Debugging</span> 
@@ -108,19 +167,6 @@
          <hr>
          </div>
      </div>     
-
-      <!-- 
-       <div class = 'row'>
-        <div class  = 'eight columns offset-by-one'>
-        <h2>Dispatch Consultant </h2> 
-        <h3>Rutgers University Office of Information Technology · January 2013 – present</h3>
-        <span class="label success">Networking</span> <span class="label success">Troubleshooting</span> <span class="label success">Customer Service</span> 
-        <p>Promotion from a lab consultant. Responsible for creating and filing tickets, as well as assisting the Rutgers community with networking issues on campus. I still perform the normal duties of a lab consultant on shift.</p>
-        <p></p>
-        <hr>
-        </div>
-      </div>
-      -->
      
       <div class = 'row'>
         <div class  = 'eight columns offset-by-one'>
@@ -144,64 +190,6 @@ troubleshooting, keeping statistics of lab usage, and general lab maintenance. P
         <hr>
         </div>
       </div>
-
     </div>
-  <!--End of Work Section --> 
-
-
-
-<!--Im Social-->
-    <div id = 'imSocial'>
-      <div class = "row">
-        <div class = 'six columns offset-by-four'>
-           <h2>Follow me, I'm Social!</h2> 
-        </div> 
-      </div>
-      <div class="row">
-           <div class="three columns offset-by-four">
-             <div class="icons">
-             <a href="https://twitter.com/kylejson" target="_blank"><i class="icon-twitter_circle icon3x"></i></a>
-             <a href="https://github.com/kylejson" target="_blank"><i class="icon-git_circle icon3x"></i></a>
-             <a href="http://www.linkedin.com/pub/kyle-johnson/5a/827/66a" target="_blank"><i class="icon-linked_in_circle icon3x"></i></a>
-           </div>
-         </div>
-      </div>
-         
-    </div>
-  <!--End of Im Social--> 
-
-
-
-  <!-- Footer -->
-
-  <footer id = "footer" class="row">
-  <div class="twelve columns">
-      <div class="row">
-
-        <div class="four columns offset-by-one">
-            <p>&copy; Copyright Kyle Johnson 2013</p>
-        </div>
-
-        <div class="five columns">
-            <ul class="link-list">
-              <li><a href="about.html">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="education.html">Education</a></li>
-              <li><a href="experience.html">Experience</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-      </div>
   </div>
-  </footer>
-
-  
-  <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/jquery.js"></script>
-  <script src="javascripts/foundation.min.js"></script>
-  
-  <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
 </body>
-</html>
