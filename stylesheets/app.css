@@ -22,14 +22,12 @@ h1 {
 }
 
 .palette1{
-	background-color: #e1704b;
-	opacity: 0.7;
+	background-color: rgba(225,112,75,0.6);
 	color: white;
 
 }
 .palette2{
-	background-color: #39a9a4;
-	opacity: 0.7;
+	background-color: rgba(57,169,164,0.6);
 	color: white;
 
 }
@@ -38,6 +36,10 @@ h1 {
 	background-image: url(../img/seatBill.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	margin-top: 0px;
 	margin-right: ;
 	margin-bottom: 0px;
@@ -50,6 +52,10 @@ h1 {
 	background-image: url(../img/codeBill.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	margin-top: 0px;
 	margin-right: ;
 	margin-bottom: 0px;
@@ -62,6 +68,10 @@ h1 {
 	background-image: url(../img/flagBill.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	margin-top: 0px;
 	margin-right: ;
 	margin-bottom: 0px;
@@ -74,6 +84,10 @@ h1 {
 	background-image: url(../img/backBill.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	margin-top: 0px;
 	margin-right: ;
 	margin-bottom: 0px;
@@ -86,6 +100,10 @@ h1 {
 	background-image: url(../img/helpBill.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	margin-top: 0px;
 	margin-right: ;
 	margin-bottom: 0px;
@@ -98,6 +116,10 @@ h1 {
 	background-image: url(../img/contactBill.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	margin-top: 0px;
 	margin-right: ;
 	margin-bottom: 0px;
@@ -290,10 +312,14 @@ ul {
 	height: 75px;
 	text-align: center;
 }
-
-@media screen and (max-width: 768px) {
+@media(max-width : 640px) {
 	h1{
-		font-size: 2em; 
-		width: 75%;
+		display: none;
+	}
+}
+
+@media(max-width: 768px) {
+	h1{
+		display: none;
 	}
 }
