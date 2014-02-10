@@ -312,14 +312,18 @@ ul {
 	height: 75px;
 	text-align: center;
 }
-@media(max-width : 640px) {
-	h1{
-		display: none;
-	}
-}
 
 @media(max-width: 768px) {
 	h1{
 		display: none;
+	}
+
+	#logo {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.icons {
+		margin-left: 15%;
 	}
 }
