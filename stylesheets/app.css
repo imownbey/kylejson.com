@@ -327,3 +327,8 @@ ul {
 		margin-left: 15%;
 	}
 }
+
+#realty iframe {
+	width: 80% !important;
+	height: 200px;
+}
