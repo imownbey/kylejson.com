@@ -106,7 +106,7 @@
 					  	</div>
 					  </div>
 
-						<div class="item row">
+						<!-- <div class="item row">
 							<div class="small-12 columns centered item-head">
 					  		<i class="pe-7s-browser pe-3x"></i>
 						  	<span class="large-text">Facebook Coding Challenge</span>
@@ -118,7 +118,7 @@
 
 					  			<a href="https://github.com/kylejson/fb-coding-challenge" target="_blank"><button>Github</button></a>
 					  	</div>
-					  </div>
+					  </div> -->
 						
 						<div class="item row">
 							<div class="small-12 columns centered item-head">
@@ -178,7 +178,7 @@
 
 					  	<div class="small-12 columns centered">
 					  		<img class="bordered" src="img/geekweek.png">
-					  		<p class="caption small-text">The Geek Week Game is a simple 2D platformer made with canvas and a small javascript game engine.</p>
+					  		<p class="caption small-text">The Geek Week Game is a simple 2D platformer made with canvas and a small javascript game engine written from scratch.</p>
  
 				  			<a href="http://eden.rutgers.edu/~kylejohn/GeekWeekGame/geekWeek.html" target="_blank"><button>Play It</button></a>					
 				  		</div>
@@ -362,21 +362,30 @@
 		  	<span class="large-text"><%= model.get('name') %></span>
 	  	</div>
 
-	  	// CHANGE THIS TO HANDLE 12 COLS IF NO MOBILE PHOTO	
+	  	// CHANGE THIS TO HANDLE 12 COLS IF NO MOBILE PHOTO	*FIXED*
 	  	<% if (model.get('phone') != '') { %>
 	  		<div class="show-for-medium-up medium-4 columns pull-right">
 	  			<img src="<%= model.get('phone') %>">
+		  	</div>
+
+		  	<div class="small-12 medium-8 columns centered">
+		  		<img class="bordered" src="<%= model.get('main') %>">
+		  		<p class="caption small-text"><%= model.get('description') %></p>
+
+		  		<% if (model.get('url') != '') { %> 
+		  			<a href="<%= model.get('url') %>" target="_blank"><button><%= model.get('linkname') %></button></a><%
+	  			} %>
 		  	</div><%
-	  	} %>
+	  	} else { %>
+		  	<div class="small-12 columns centered">
+		  		<img class="bordered" src="<%= model.get('main') %>">
+		  		<p class="caption small-text"><%= model.get('description') %></p>
 
-	  	<div class="small-12 medium-8 columns centered">
-	  		<img class="bordered" src="<%= model.get('main') %>">
-	  		<p class="caption small-text"><%= model.get('description') %></p>
-
-	  		<% if (model.get('url') != '') { %> 
-	  			<a href="<%= model.get('url') %>" target="_blank"><button><%= model.get('linkname') %></button></a><%
-  			} %>
-	  	</div>
+		  		<% if (model.get('url') != '') { %> 
+		  			<a href="<%= model.get('url') %>" target="_blank"><button><%= model.get('linkname') %></button></a><%
+					} %>
+		  	</div><% 
+			} %>
 	  </div>
 	</script>
 
@@ -397,7 +406,7 @@
 
 	<!-- Workflow Template -->
 	<script type="text/template" id="WorkflowTmp">
-		<div class="small-6 medium-3 columns">
+		<div class="small-12 medium-3 columns">
 			<div class="centered">
 				<i class="<%= model.get('icon') %>"></i>
 			</div>
