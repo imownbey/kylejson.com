@@ -46,7 +46,7 @@ body {
 }
 
 .item .small-text {
-	padding: 0 15%;
+	padding: 0 5%;
 }
 
 .bordered {
@@ -68,6 +68,10 @@ body {
 
 .item button {
 
+}
+
+iframe {
+	margin: 0 auto;
 }
 
 /* DO THIS DYNAMICALLY WITH JAVASCRIPT*/
@@ -400,15 +404,16 @@ button a, button a:hover {
 	margin: 50px 0 -300px;
 }
 
-#form {
-	display: inline-block;
-}
-
 label {
 	display: block;
+	float: left;
+	width: 15%;
 }
 
 input, input:focus {
+	float: right;
+	width: 84%;
+	margin-top: -3px;
   background: transparent;
   border: none;
   outline: none;
@@ -424,6 +429,7 @@ input {
 }
 
 #output {
+	clear: both;
 	font-family: monospace;
 	line-height: 25px;
 	font-size: 14px;
@@ -534,7 +540,7 @@ keyframes blink{
 /*
 *Media Queries - Custom
 */
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 640px) {
 	#header { 
 		background: url('../img/mealt-small.jpg') no-repeat top center;
 		-webkit-background-size: cover;
@@ -550,5 +556,9 @@ keyframes blink{
 
   .table p, h1 {
 		font-size: 1.75rem;
+	}
+
+	.owl-pagination , .owl-controls {
+		display: none !important;
 	}
 }

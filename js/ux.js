@@ -51,7 +51,7 @@ $(function() {
 
     //Console append animation class on scroll to #contact 
     if($(window).width() >= 640) {
-      if($(this).scrollTop() >= $('#contact').position().top){ 
+      if($(this).scrollTop() >= $('#contact').position().top || $(window).scrollTop() + $(window).height() > $(document).height() - 50){ 
         $('.push').stop().animate({marginTop: 250}, 'slow');
         $('input').focus();
       }
