@@ -22,6 +22,24 @@ body {
 	text-align: center;
 }
 
+#credit {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+#credit, #credit a {
+	color: white;
+	font-weight: lighter;
+}
+#credit a{
+	text-decoration: underline;
+}
+
+#credit a:hover {
+	opacity: 0.9;
+}
+
 /*
 *Owl slider
 */
@@ -66,8 +84,12 @@ body {
 	margin: 25px 0;
 }
 
-.item button {
+.caption a {
+	text-decoration: underline;
+}
 
+.caption a:hover {
+	opacity: 0.8;
 }
 
 iframe {
@@ -221,12 +243,43 @@ iframe {
 	font-size: 1rem;
 }
 
+.tiny-text {
+	line-height: 20px;
+}
+
+.tiny-text span {
+	float: left;
+	font-size: 0.75rem;
+	line-height: 20px;
+	position: absolute;
+	top: 2;
+}
+
+#tiny-text1 {
+	left: 15px;
+}
+
+#tiny-text2 {
+	right: 15px;
+}
+
+.key {
+	position: relative;
+}
+
 .skills-exp-text {
 	color: #39d1b4;
 	font-size: 20px;
 	font-weight: bold;
 }
 
+.job p a {
+	text-decoration: underline;
+}
+
+.job p a:hover {
+	opacity: 0.8;
+}
 /*
 *Icons
 */

@@ -4,9 +4,9 @@ runtime: python
 api_version: 1
 
 handlers:
-- url: /(.*\.(gif|png|jpg|ico|js|css|eot|svg|ttf|woff|mp4|webm|ogv|fla|swf|pdf))
+- url: /(.*\.(gif|png|jpg|ico|js|css|eot|svg|ttf|woff|mp4|webm|ogv|fla|swf|pdf|otf))
   static_files: \1
-  upload: (.*\.(gif|png|jpg|ico|js|css|eot|svg|ttf|wof|mp4|webm|ogv|fla|swf|pdf))
+  upload: (.*\.(gif|png|jpg|ico|js|css|eot|svg|ttf|wof|mp4|webm|ogv|fla|swf|pdf|otf))
 
 - url: /robots.txt
   static_files: robots.txt
